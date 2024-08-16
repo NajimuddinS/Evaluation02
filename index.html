@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Silkscreen:wght@400;700&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Exo 2", sans-serif;
+        }
+
+        nav>div.container{
+            max-width: 1300px;
+            margin: auto;
+            padding-top: 10px;
+        }
+
+        nav>div.container>div.logosection{
+            display: inline-block;
+            img{
+                height: auto;
+                width: 130px;
+                position: relative;
+                top: 13px;
+            }
+
+            span{
+                display: inline;
+                color: #85888C;
+                font-weight: 700;
+                font-size: 16px;
+                padding-left: 30px;
+            }
+            
+        }
+        .section2{
+            display: inline-block;
+            padding-left: 492px;
+            span{
+                color: #FD7D72;
+                font-weight: 700;
+                font-size: 16px;
+                padding-right: 50px;
+            }
+            button{
+                padding: 16.2px 29px 16.2px 29px;
+                border: none;
+                background-image: linear-gradient(50deg, #fe9a52, #ff5748);
+                border-radius: 3px;
+                font-weight: 700;
+                color: white;
+                font-size: 15px;
+            }
+        }
+
+        .bannersection{
+            max-width: 1300px;
+            margin: auto;
+            padding-top: 50px;
+            margin-bottom: 100px;
+        }
+
+        .bannersection>div{
+            display: inline-block;
+            width: 600px;
+            .para{color: #9DA1A6;
+                font-weight: 700;}
+            h1{
+                color: #5022E2;
+                font-size: 58px;
+            }
+
+            .para1{
+                font-size: 19px;
+                width: 400px;
+                color: #4B4D4F;
+                padding-top: 10px;
+                font-weight: 500;
+                padding-bottom: 50px;
+            }
+
+            .down{
+                padding: 16.2px 29px 16.2px 29px;
+                border: none;
+                background-image: linear-gradient(50deg, #fe9a52, #ff5748);
+                border-radius: 5px;
+                font-weight: 700;
+                color: white;
+                font-size: 15px;
+                margin-right: 10px;
+            }
+
+            .Demo{
+                padding: 16.2px 29px 16.2px 29px;
+                border: 1px solid #fe9a52;
+                background-color: white;
+                border-radius: 5px;
+                font-weight: 700;
+                color: #fe9a52;
+                font-size: 15px;
+            }
+        }
+
+        .gif{
+            width: 700px;
+        }
+        article{
+            background-color: #fff0e5;  
+        }
+        .ribbon{
+            max-width: 1300px;
+            margin: auto;
+            height: 200px;
+            margin-bottom: 70px;
+            img{
+                margin-top: 80px;
+                margin-right: 100px;
+            }
+            
+        }
+
+        main>div.contents{
+            max-width: 1300px;
+            margin: auto;
+            margin-bottom: 150px;
+        }
+
+        .mob{
+            margin-right: 150px;
+            display: inline-block;
+            img{
+                width: 300px;
+            }
+        }
+        .partnership{
+            position: relative;
+            bottom: 250px;
+            width: 800px;
+            display: inline-block;
+            .he{
+                color: #5022E2;
+                font-weight: 700;
+            }
+            h1{
+                font-size: 50px;
+                color: #353738;
+                margin-bottom: 20px;
+            }
+            .pg{
+                font-size: 19px;
+                color: #4B4D4F;
+            }
+            button{
+                padding: 14.2px 25px 14.2px 24px;
+                border: none;
+                background-image: linear-gradient(50deg, #fe9a52, #ff5748);
+                border-radius: 3px;
+                font-weight: 700;
+                color: white;
+                font-size: 15px;
+                margin-top: 30px;
+            }
+        }
+        .blocks{
+            max-width: 1300px;
+            margin: auto;
+            margin-bottom: 80px;
+        }
+
+        .b1{
+            display: inline-block;
+            margin-right: 190px;
+            width: 300px;
+
+            .cube1{
+                background-color: #ffecea;
+                height: 70px;
+                width: 70px;
+                border-radius: 20px;
+                margin-bottom: 40px;
+            }
+            h1{
+                margin-bottom: 20px;
+            }
+            p{
+                color: #4B4D4F;
+                font-size: 19px;
+                width: 250px;
+            }
+        }
+
+        .b2{
+            display: inline-block;
+            margin-right: 190px;
+            width: 300px;
+
+            .cube2{
+                background-color: #ffecea;
+                height: 70px;
+                width: 70px;
+                border-radius: 20px;
+                margin-bottom: 40px;
+            }
+            h1{
+                margin-bottom: 20px;
+            }
+            p{
+                color: #4B4D4F;
+                font-size: 19px;
+                width: 250px;
+            }
+        }
+
+        .b3{
+            display: inline-block;
+            width: 300px;
+
+            .cube3{
+                background-color: #ffecea;
+                height: 70px;
+                width: 70px;
+                border-radius: 20px;
+                margin-bottom: 40px;
+            }
+            h1{
+                margin-bottom: 20px;
+            }
+            p{
+                color: #4B4D4F;
+                font-size: 19px;
+                width: 250px;
+            }
+        }
+
+        .parent{
+            background-image: linear-gradient(90deg, rgba(255,252,248,1) 0%, rgba(255,248,240,1) 100%);
+            padding-bottom: 30px;
+        }
+
+        div.contents1{
+            max-width: 1300px;
+            margin: auto;
+            margin-bottom: 150px;
+            padding-top: 70px;
+        }
+
+        .mob1{
+            margin-left: 120px;
+            display: inline-block;
+            img{
+                width: 300px;
+            }
+        }
+        .partnership1{
+            position: relative;
+            bottom: 150px;
+            width: 800px;
+            display: inline-block;
+            .he{
+                color: #5022E2;
+                font-weight: 700;
+                font-size: 18px;
+            }
+            h1{
+                font-size: 47px;
+                color: #353738;
+                margin-bottom: 20px;
+            }
+            .pg{
+                font-size: 19px;
+                color: #4B4D4F;
+            }
+            button{
+                padding: 14.2px 25px 14.2px 24px;
+                border: none;
+                background-image: linear-gradient(50deg, #fe9a52, #ff5748);
+                border-radius: 3px;
+                font-weight: 700;
+                color: white;
+                font-size: 15px;
+                margin-top: 30px;
+            }
+        }
+
+        .blocks1{
+            max-width: 1300px;
+            margin: auto;
+            margin-bottom: 80px;
+        }
+
+        .b11{
+            display: inline-block;
+            margin-right: 190px;
+            width: 300px;
+
+            .cube11{
+                background-color: #ffffff;
+                height: 70px;
+                width: 70px;
+                border-radius: 20px;
+                margin-bottom: 40px;
+            }
+            h1{
+                margin-bottom: 20px;
+                font-size: 22px;
+            }
+            p{
+                color: #4B4D4F;
+                font-size: 19px;
+                width: 250px;
+            }
+        }
+
+        .b22{
+            display: inline-block;
+            margin-right: 190px;
+            width: 300px;
+
+            .cube22{
+                background-color: #ffffff;
+                height: 70px;
+                width: 70px;
+                border-radius: 20px;
+                margin-bottom: 40px;
+            }
+            h1{
+                margin-bottom: 20px;
+                font-size: 22px;
+            }
+            p{
+                color: #4B4D4F;
+                font-size: 19px;
+                width: 250px;
+            }
+        }
+
+        .b33{
+            display: inline-block;
+            width: 300px;
+
+            .cube33{
+                background-color: #ffffff;
+                height: 70px;
+                width: 70px;
+                border-radius: 20px;
+                margin-bottom: 40px;
+            }
+            h1{
+                margin-bottom: 20px;
+                font-size: 22px;
+            }
+            p{
+                color: #4B4D4F;
+                font-size: 19px;
+                width: 250px;
+            }
+        }
+        section>div.reviewers{
+            max-width: 1300px;
+            margin: auto;
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+
+        .p1{
+            /* width: 200px; */
+            .pic1{
+                width: 100px;
+            }
+            .quote{
+                display: inline-block;
+                position: relative;
+                bottom: 60px;
+            }
+        }
+
+        .Elements{
+            display: inline-block;
+        }
+        .textual{
+            display: inline-block;
+            width: 500px;
+        }
+        .banner1{
+            background-image: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,248,240,1) 100%);
+            height: 300px;
+        }
+        .cont{
+            max-width: 1300px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logosection">
+            <img src="https://themewagon.github.io/collab/v1.0.0/assets/img/gallery/logo.png" alt="">
+            <span for="">Products</span>
+            <span for="">UseCases</span>
+            <span for="">Developers</span>
+            <span for="">Pricing</span>
+            </div>
+            
+            <div class="section2">
+                <span>Sign in</span>
+                <button>TRY FOR FREE</button>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="bannersection">
+            <div>
+                <p class="para">TOP BUSINESS APP</p>
+                <h1>The plaform for
+                    better cooperation</h1>
+                <p class="para1">Crafted with care & creativity. Brings together
+                    everthing in one place.</p>
+
+                <button class="down">
+                    <i class="fa-solid fa-download"></i>
+                    DOWNLOAD</button>
+                <button class="Demo">
+                    <i class="fa-solid fa-play"></i>
+                    CHECK DEMO</button>
+            </div>
+            <div>
+                <img class="gif" src="https://themewagon.github.io/collab/v1.0.0/assets/img/gallery/hero-header.gif" alt="">
+            </div>
+        </div>
+    </section>
+    <article>
+        <div class="ribbon">
+            <img src="https://themewagon.github.io/collab/v1.0.0/assets/img/gallery/netflix.png" height="38" alt="brands">
+            <img src="https://themewagon.github.io/collab/v1.0.0/assets/img/gallery/facebook.png" height="38" alt="brands">
+            <img src="https://themewagon.github.io/collab/v1.0.0/assets/img/gallery/freelancer.png" height="38" alt="brands">
+            <img src="https://themewagon.github.io/collab/v1.0.0/assets/img/gallery/mailbluster.png" height="38" alt="brands">
+            <img src="https://themewagon.github.io/collab/v1.0.0/assets/img/gallery/theme-wagon.png" height="38" alt="brands">
+        </div>
+    </article>
+    <main>
+        <div class="contents">
+            <div class="mob">
+                <img src="https://themewagon.github.io/collab/v1.0.0/assets/img/gallery/partnership.png" alt="">
+            </div>
+            <div class="partnership">
+                <p class="he">PARTNERSHIP</p>
+                <h1>Build strong partnership & organizations</h1>
+                <p class="pg">Bring all your document under one place and make it easy to share with other in no time. That makes the whole process comfortable.</p>
+                <button>Learn More</button>
+            </div>
+            
+        </div>
+    </main>
+    <section>
+        <div class="blocks">
+        <div class="b1">
+            <div class="cube1">
+                <i class="fa-regular fa-pen-to-square fa-2xl" style="color: #FD7D72;position: relative;left: 20px;top: 21px;"></i>
+            </div>
+            <h1>Write it up</h1>
+            <p>Write it down whenever you feel for it, as each details matter and stay.</p>
+        </div>
+        <div class="b2">
+            <div class="cube2">
+                <i class="fa-solid fa-desktop fa-2xl" style="color: #FD7D72;position: relative;left: 18px;top: 23px;"></i>
+            </div>
+            <h1>Show to others menu</h1>
+            <p>Share effective and important data to your partner.</p>
+        </div>
+        <div class="b3">
+            <div class="cube3">
+                <i class="fa-solid fa-cloud fa-2xl" style="color: #FD7D72;position: relative;left: 16px;top: 21px;"></i>
+            </div>
+            <h1>Storing at the cloud</h1>
+            <p>Save your valuable info to get all the resources under one platform as a unit.</p>
+        </div>
+        </div>
+    </section>
+    <main>
+        <div class="parent">
+        <div class="contents1">
+            <div class="partnership1">
+                <p class="he">CORROBORATION</p>
+                <h1>Keeping All Elements Together To Present The Project</h1>
+                <p class="pg">While the project is shared between several members, the resources need to be at one place to maintain the clarity of the project, and flexibility among developers.</p>
+                <button>Learn More</button>
+            </div>
+            <div class="mob1">
+                <img src="https://themewagon.github.io/collab/v1.0.0/assets/img/gallery/corroboration.png" alt="">
+            </div>
+        </div>
+        <div class="blocks1">
+            <div class="b11">
+                <div class="cube11">
+                    <i class="fa-solid fa-video fa-2xl" style="color: #FE9A52;position: relative;left: 20px;top: 25px;"></i>
+                </div>
+                <h1>Write it up</h1>
+                <p>Communicating through video on elaborate workflow and understanding.</p>
+            </div>
+            <div class="b22">
+                <div class="cube22">
+                    <i class="fa-solid fa-comment-dots fa-2xl"  style="color: #FE9A52;position: relative;left: 18px;top: 23px;"></i>
+                </div>
+                <h1>Show to others menu</h1>
+                <p>Stay communicated with all the colleagues and brush up your social skill.</p>
+            </div>
+            <div class="b33">
+                <div class="cube33">
+                    <i class="fa-regular fa-image fa-2xl" style="color: #FE9A52;position: relative;left: 18px;top: 23px;"></i>
+                </div>
+                <h1>Storing at the cloud</h1>
+                <p>Click it and share the top quality images to all the member of your group.</p>
+            </div>
+            </div>
+    </div>
+    </main>
+    <section>
+        <div class="reviewers">
+            <div class="p1">
+                <div class="Elements">
+                <img class="pic1" src="https://themewagon.github.io/collab/v1.0.0/assets/img/gallery/testimonial-1.png" alt="">
+                <img class="quote" src="https://themewagon.github.io/collab/v1.0.0/assets/img/icons/quot.svg" alt="">
+                </div>
+                <div class="textual">
+                    <span>
+                        It would be only imprudent if you dont grab this app now and use it at its best, with all the great facilities it got.”
+                    </span><br><br>
+                    <span style="font-weight: bold;">Safira Petterson</span><br>
+                    <span>Director, Plugbase</span>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="p1">
+                <div class="Elements">
+                <img class="pic1" src="https://themewagon.github.io/collab/v1.0.0/assets/img/gallery/testimonial-3.png" alt="">
+                <img class="quote" src="https://themewagon.github.io/collab/v1.0.0/assets/img/icons/quot.svg" alt="">
+                </div>
+                <div class="textual">
+                    <span>
+                        From the production to deployment, this one is an absolute marvel to be work with. Give it your shot so that you don’t regret ”
+                    </span><br><br>
+                    <span style="font-weight: bold;">Safira Petterson</span><br>
+                    <span>Director, Plugbase</span>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <article>
+        <div class="banner1">
+            <div class="cont">
+
+            </div>
+
+        </div>
+    </article>
+</body>
+<script src="https://kit.fontawesome.com/e1bd217f15.js" crossorigin="anonymous"></script>
+</html>
